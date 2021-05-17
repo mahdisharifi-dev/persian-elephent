@@ -1,0 +1,18 @@
+{
+  "autoload": {
+    "files": ["Core/helpers.php"],
+    "psr-4": {
+      "Bootstrap\\": "Bootstrap/",
+      "App\\": "App/",
+      "Core\\": "Core/",
+      "Routes\\": "Routes/",
+      "Database\\": "Database/"
+    }
+  },
+  "require": {
+    "illuminate/database": "^8.40",
+    "ext-pdo": "*",
+    "symfony/dotenv": "^5.2",
+    "larapack/dd": "1.*"
+  }
+}
