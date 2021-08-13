@@ -8,12 +8,14 @@ use Core\storage\Session;
 class Auth implements Authenticable {
 
     public static function login ($username, $password) : User {
-        $user = User::where(config('auth')['unique'], $username)->where('password', sha1($password))->first();
+        $user = User::query()->where(config('auth')['unique'], $username)
+        ->where('password', sha1($password))
+        ->first();
         Session::set('auth', $user);
         return $user;
     }
 
-    public static function logout () {
+    public static function logout () : void {
         Session::remove('auth');
     }
 

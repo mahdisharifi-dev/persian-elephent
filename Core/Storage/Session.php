@@ -6,12 +6,7 @@ class Session {
 
     public static function get ($key) {
         self::start_session();
-        if (isset($_SESSION[$key])) {
-            return $_SESSION[$key];
-        } else {
-            return false;
-        }
-        
+        return isset($_SESSION[$key]) ? $_SESSION[$key] : false;
     }
 
     public static function set ($key, $value) {
@@ -25,9 +20,7 @@ class Session {
     }
 
     public static function start_session () {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        session_status() === PHP_SESSION_NONE && session_start();
     }
 
 
