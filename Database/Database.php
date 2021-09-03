@@ -7,7 +7,7 @@ class Database {
 
     public function __construct() {
 
-        $config = require_once("../Config/app.php");
+        $config = require_once(__DIR__ . "/../Config/app.php");
 
         $capsule = new Capsule();
         $capsule->addConnection([
