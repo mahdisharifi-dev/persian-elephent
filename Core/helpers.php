@@ -14,6 +14,10 @@ function request (string $method) {
     if (strtolower($method) == "post") {
         return $_POST;
     }
+
+    if (strtolower($method) == "file") {
+        return $_FILES;
+    }
 }
 
 function config ($type) {

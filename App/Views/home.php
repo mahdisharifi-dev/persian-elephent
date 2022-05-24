@@ -5,12 +5,12 @@
             <img class="w-24 md:w-56 mb-8" src="images/persianElephant.png" alt="Logo">
             <ul class="flex justify-center w-full mb-16 flex-wrap">
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Framework</a></li>
-                <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Download</a></li>
+                <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Document</a></li>
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Github</a></li>
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Contact</a></li>
             </ul>
             <br/>
-            <p class="text-green-400 text-sm"><b>v1.0.0 &copy; 2021</b></p>
+            <p class="text-green-400 text-sm"><b>v<?= config('app')['version'] ?> &copy; <a href="https://www.mahdisharifi.dev">Mahdi Sharifi</a></b></p>
         </div>
     </div>
 <?php require_once "layouts/footer.php" ?>

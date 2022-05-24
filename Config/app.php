@@ -3,7 +3,8 @@
 return [
 
     'app' => [
-        'name' => getEnvData('APP_NAME')
+        'name' => getEnvData('APP_NAME'),
+        'version' => getEnvData('APP_VERSION')
     ],
 
     'database' => [
