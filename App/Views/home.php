@@ -7,7 +7,7 @@
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Framework</a></li>
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Document</a></li>
                 <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Github</a></li>
-                <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Contact</a></li>
+                  <li><a class="p-4 text-sm md:text-md text-gray-500 hover:text-green-400 transition-all font-bold" href="#">Contact</a></li>
             </ul>
             <br/>
             <p class="text-green-400 text-sm"><b>v<?= config('app')['version'] ?> &copy; <a href="https://www.mahdisharifi.dev">Mahdi Sharifi</a></b></p>

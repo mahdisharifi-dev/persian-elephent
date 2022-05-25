@@ -8,7 +8,7 @@ class View {
 
     public static function render ($view, $data = null, $var_name = "data") {
         $$var_name = $data;
-        require_once __DIR__ . "/../../app/views/{$view}.php";
+        require_once __DIR__ . "/../../App/Views/{$view}.php";
     }
 
 }

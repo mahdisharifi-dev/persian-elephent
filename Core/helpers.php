@@ -21,6 +21,10 @@ function request (string $method) {
 }
 
 function config ($type) {
-    $config = require("../Config/app.php");
+    $config = require(__DIR__ . "/../Config/app.php");
     return $config[$type];
+}
+
+function asset ($path) {
+    return getEnvData('APP_URL') . $path;
 }
